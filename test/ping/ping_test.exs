@@ -9,7 +9,7 @@ defmodule Ping.RouterTest do
 
     assert conn.state == :sent
     assert conn.status == 200
-    assert conn.resp_body == "pong"
+    assert conn.resp_body =~ "pong"
   end
 
   test "returns a 404 from an unmatched route" do

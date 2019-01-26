@@ -6,7 +6,8 @@ defmodule Ping.Router do
   plug(:dispatch)
 
   get "/ping" do
-    send_resp(conn, Plug.Conn.Status.code(:ok), "pong")
+    {:ok, vsn} = :application.get_key(:ping, :vsn)
+    send_resp(conn, Plug.Conn.Status.code(:ok), "pong from v#{vsn}")
   end
 
   match _ do

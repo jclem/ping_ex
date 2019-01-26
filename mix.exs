@@ -1,10 +1,12 @@
 defmodule Ping.MixProject do
   use Mix.Project
 
+  @vsn "1.0.0"
+
   def project do
     [
       app: :ping,
-      version: "0.1.0",
+      version: @vsn,
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       deps: deps()
