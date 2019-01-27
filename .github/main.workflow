@@ -6,9 +6,6 @@ workflow "Build & Release" {
 action "Create Release" {
   uses = "./.github/mix"
   args = "do deps.get, compile, release"
-  env = {
-    PORT = "4000"
-  }
   secrets = ["COOKIE"]
 }
 
