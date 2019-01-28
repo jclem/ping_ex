@@ -1,7 +1,7 @@
 defmodule Ping.MixProject do
   use Mix.Project
 
-  @vsn "1.0.1"
+  @vsn "1.0.2"
 
   def project do
     [
