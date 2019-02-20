@@ -3,6 +3,11 @@ workflow "Build & Release" {
   resolves = "Container Release"
 }
 
+workflow "Build & Release (on push)" {
+  on = "push"
+  resolves = "Container Release"
+}
+
 action "Create Release" {
   uses = "./.github/mix"
   args = "do deps.get, compile, release"
