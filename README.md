@@ -1,3 +1,3 @@
 # Ping
 
-**TODO: Add description**
+Tick: 1
