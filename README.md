@@ -1,3 +1,3 @@
 # Ping
 
-Tick: 1
+Tick: 2
